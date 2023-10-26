@@ -20,9 +20,9 @@ export default function ProductCard({product}:ProductCardProps) {
         <Image
         src={product.imageUrl}
         alt={product.name}
-        width={800}
-        height={800}
-        className="h-48 object-cover"
+        width={400}
+        height={900}
+        className="h-64 object-cover"
         />
       </figure>
       <div className="card-body">
@@ -31,7 +31,7 @@ export default function ProductCard({product}:ProductCardProps) {
      {isNew && <div className="badge badge-secondary">NEW</div> } 
     </h2>
     <p>{product.description}</p>
-    <PriceTag price={product.price}/>
+    <PriceTag price={product.price} />
     
   </div>
 
